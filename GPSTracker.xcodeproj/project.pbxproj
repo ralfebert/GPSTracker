@@ -13,7 +13,9 @@
 		BF01876827F9A9CB00A5DF28 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876527F9A9CB00A5DF28 /* CurrentLocation.swift */; };
 		BF01876927F9A9CB00A5DF28 /* DocumentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876627F9A9CB00A5DF28 /* DocumentStore.swift */; };
 		BF01876A27F9A9CB00A5DF28 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876727F9A9CB00A5DF28 /* LocationsListView.swift */; };
-		BF01876C27F9ABE000A5DF28 /* GPSTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876B27F9ABE000A5DF28 /* GPSTrackModel.swift */; };
+		BF01876C27F9ABE000A5DF28 /* GPSLocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876B27F9ABE000A5DF28 /* GPSLocationsModel.swift */; };
+		BFB6FE172802C69F00E9C453 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6FE162802C69F00E9C453 /* BottomBarView.swift */; };
+		BFB6FE1A2802C76500E9C453 /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6FE192802C76500E9C453 /* RecordButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +26,9 @@
 		BF01876527F9A9CB00A5DF28 /* CurrentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 		BF01876627F9A9CB00A5DF28 /* DocumentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentStore.swift; sourceTree = "<group>"; };
 		BF01876727F9A9CB00A5DF28 /* LocationsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
-		BF01876B27F9ABE000A5DF28 /* GPSTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSTrackModel.swift; sourceTree = "<group>"; };
+		BF01876B27F9ABE000A5DF28 /* GPSLocationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSLocationsModel.swift; sourceTree = "<group>"; };
+		BFB6FE162802C69F00E9C453 /* BottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
+		BFB6FE192802C76500E9C453 /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +63,9 @@
 			children = (
 				BF01875727F9A94400A5DF28 /* GPSTrackerApp.swift */,
 				BF01876727F9A9CB00A5DF28 /* LocationsListView.swift */,
-				BF01876B27F9ABE000A5DF28 /* GPSTrackModel.swift */,
-				BF01876527F9A9CB00A5DF28 /* CurrentLocation.swift */,
-				BF01876627F9A9CB00A5DF28 /* DocumentStore.swift */,
+				BFB6FE162802C69F00E9C453 /* BottomBarView.swift */,
+				BFB6FE192802C76500E9C453 /* RecordButtonView.swift */,
+				BFB6FE182802C6A200E9C453 /* Model */,
 				BF01875B27F9A94500A5DF28 /* Assets.xcassets */,
 				BF01875D27F9A94500A5DF28 /* Preview Content */,
 			);
@@ -74,6 +78,16 @@
 				BF01875E27F9A94500A5DF28 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFB6FE182802C6A200E9C453 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF01876B27F9ABE000A5DF28 /* GPSLocationsModel.swift */,
+				BF01876527F9A9CB00A5DF28 /* CurrentLocation.swift */,
+				BF01876627F9A9CB00A5DF28 /* DocumentStore.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF01876A27F9A9CB00A5DF28 /* LocationsListView.swift in Sources */,
-				BF01876C27F9ABE000A5DF28 /* GPSTrackModel.swift in Sources */,
+				BF01876C27F9ABE000A5DF28 /* GPSLocationsModel.swift in Sources */,
 				BF01876827F9A9CB00A5DF28 /* CurrentLocation.swift in Sources */,
+				BFB6FE172802C69F00E9C453 /* BottomBarView.swift in Sources */,
 				BF01876927F9A9CB00A5DF28 /* DocumentStore.swift in Sources */,
+				BFB6FE1A2802C76500E9C453 /* RecordButtonView.swift in Sources */,
 				BF01875827F9A94400A5DF28 /* GPSTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GPSTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = R476D442DR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Recording GPS tracks";
@@ -308,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GPSTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = R476D442DR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Recording GPS tracks";

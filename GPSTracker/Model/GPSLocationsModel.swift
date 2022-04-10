@@ -11,9 +11,13 @@ struct Location: Identifiable, Codable {
         self.latitude = coordinate.latitude
         self.longitude = coordinate.longitude
     }
+    
+    var coordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
+    }
 }
 
-class GPSTrackModel: ObservableObject {
+class GPSLocationsModel: ObservableObject {
     let currentLocation = CurrentLocation(isActive: true)
     let locationsDocument = DocumentStore<[Location]>(filename: "locations.json")
     @Published var locations: [Location] = [] {
@@ -32,5 +36,9 @@ class GPSTrackModel: ObservableObject {
         } else {
             print("no coordinate")
         }
+    }
+    
+    func removeAll() {
+        self.locations.removeAll()
     }
 }

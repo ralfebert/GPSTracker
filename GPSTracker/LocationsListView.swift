@@ -1,14 +1,37 @@
 import SwiftUI
+import MapKit
 
 struct LocationsListView: View {
-    @StateObject var locationsModel = GPSTrackModel()
+    @StateObject var locationsModel = GPSLocationsModel()
+    @State var mapRegion = MKCoordinateRegion()
 
     var body: some View {
-        List(locationsModel.locations) { location in
-            Text("\(location.latitude) \(location.longitude)")
-        }
-        .navigationTitle("Locations")
-        .navigationBarItems(trailing: self.addButton)
+        Map(
+            coordinateRegion: $mapRegion,
+            showsUserLocation: true,
+            userTrackingMode: .constant(.follow),
+            annotationItems: locationsModel.locations,
+            annotationContent: { location in
+                MapPin(coordinate: location.coordinate)
+            }
+        )
+        .ignoresSafeArea()
+        .overlay(
+            alignment: .bottom,
+            content: {
+                BottomBarView(
+                    onRecord: {
+                        self.locationsModel.addCurrentLocation()
+                    },
+                    onDelete: {
+                        self.locationsModel.removeAll()
+                    },
+                    onShowList: {
+                    }
+                )
+                .padding()
+            }
+        )
     }
 
     @ViewBuilder var addButton: some View {
