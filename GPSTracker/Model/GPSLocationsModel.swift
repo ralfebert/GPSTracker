@@ -11,7 +11,7 @@ struct Location: Identifiable, Codable {
         self.latitude = coordinate.latitude
         self.longitude = coordinate.longitude
     }
-    
+
     var coordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(latitude: self.latitude, longitude: self.longitude)
     }
@@ -37,7 +37,7 @@ class GPSLocationsModel: ObservableObject {
             print("no coordinate")
         }
     }
-    
+
     func removeAll() {
         self.locations.removeAll()
     }

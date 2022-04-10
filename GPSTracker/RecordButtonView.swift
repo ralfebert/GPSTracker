@@ -11,7 +11,7 @@ struct RecordButton: View {
                     Circle()
                         .fill(.red)
                         .frame(width: 48, height: 48)
-                    
+
                     Circle()
                         .strokeBorder(.gray, lineWidth: 3)
                         .frame(width: 60, height: 60)
@@ -19,7 +19,6 @@ struct RecordButton: View {
             }
         )
     }
-
 }
 
 struct RecordButtonView_Previews: PreviewProvider {

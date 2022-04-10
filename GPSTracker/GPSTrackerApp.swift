@@ -4,7 +4,7 @@ import SwiftUI
 struct GPSTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            LocationsListView()
+            LocationsMapView()
         }
     }
 }

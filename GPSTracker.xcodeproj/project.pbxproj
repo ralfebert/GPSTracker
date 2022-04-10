@@ -12,10 +12,11 @@
 		BF01875F27F9A94500A5DF28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF01875E27F9A94500A5DF28 /* Preview Assets.xcassets */; };
 		BF01876827F9A9CB00A5DF28 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876527F9A9CB00A5DF28 /* CurrentLocation.swift */; };
 		BF01876927F9A9CB00A5DF28 /* DocumentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876627F9A9CB00A5DF28 /* DocumentStore.swift */; };
-		BF01876A27F9A9CB00A5DF28 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876727F9A9CB00A5DF28 /* LocationsListView.swift */; };
+		BF01876A27F9A9CB00A5DF28 /* LocationsMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876727F9A9CB00A5DF28 /* LocationsMapView.swift */; };
 		BF01876C27F9ABE000A5DF28 /* GPSLocationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01876B27F9ABE000A5DF28 /* GPSLocationsModel.swift */; };
-		BFB6FE172802C69F00E9C453 /* BottomBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6FE162802C69F00E9C453 /* BottomBarView.swift */; };
 		BFB6FE1A2802C76500E9C453 /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6FE192802C76500E9C453 /* RecordButtonView.swift */; };
+		BFB6FE2328030B3A00E9C453 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6FE2228030B3A00E9C453 /* CircleButtonView.swift */; };
+		BFB6FE2528030C8F00E9C453 /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB6FE2428030C8F00E9C453 /* LocationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +26,11 @@
 		BF01875E27F9A94500A5DF28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BF01876527F9A9CB00A5DF28 /* CurrentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
 		BF01876627F9A9CB00A5DF28 /* DocumentStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentStore.swift; sourceTree = "<group>"; };
-		BF01876727F9A9CB00A5DF28 /* LocationsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
+		BF01876727F9A9CB00A5DF28 /* LocationsMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsMapView.swift; sourceTree = "<group>"; };
 		BF01876B27F9ABE000A5DF28 /* GPSLocationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSLocationsModel.swift; sourceTree = "<group>"; };
-		BFB6FE162802C69F00E9C453 /* BottomBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomBarView.swift; sourceTree = "<group>"; };
 		BFB6FE192802C76500E9C453 /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
+		BFB6FE2228030B3A00E9C453 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		BFB6FE2428030C8F00E9C453 /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				BF01875727F9A94400A5DF28 /* GPSTrackerApp.swift */,
-				BF01876727F9A9CB00A5DF28 /* LocationsListView.swift */,
-				BFB6FE162802C69F00E9C453 /* BottomBarView.swift */,
+				BF01876727F9A9CB00A5DF28 /* LocationsMapView.swift */,
+				BFB6FE2428030C8F00E9C453 /* LocationsListView.swift */,
 				BFB6FE192802C76500E9C453 /* RecordButtonView.swift */,
+				BFB6FE2228030B3A00E9C453 /* CircleButtonView.swift */,
 				BFB6FE182802C6A200E9C453 /* Model */,
 				BF01875B27F9A94500A5DF28 /* Assets.xcassets */,
 				BF01875D27F9A94500A5DF28 /* Preview Content */,
@@ -160,11 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF01876A27F9A9CB00A5DF28 /* LocationsListView.swift in Sources */,
+				BF01876A27F9A9CB00A5DF28 /* LocationsMapView.swift in Sources */,
 				BF01876C27F9ABE000A5DF28 /* GPSLocationsModel.swift in Sources */,
+				BFB6FE2328030B3A00E9C453 /* CircleButtonView.swift in Sources */,
 				BF01876827F9A9CB00A5DF28 /* CurrentLocation.swift in Sources */,
-				BFB6FE172802C69F00E9C453 /* BottomBarView.swift in Sources */,
 				BF01876927F9A9CB00A5DF28 /* DocumentStore.swift in Sources */,
+				BFB6FE2528030C8F00E9C453 /* LocationsListView.swift in Sources */,
 				BFB6FE1A2802C76500E9C453 /* RecordButtonView.swift in Sources */,
 				BF01875827F9A94400A5DF28 /* GPSTrackerApp.swift in Sources */,
 			);
